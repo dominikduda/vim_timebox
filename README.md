@@ -36,7 +36,7 @@ call timer_start(900, {-> execute(':AirlineRefresh')}, { 'repeat': -1 })
 
 ```vim
 set  statusline+=%{vim_timebox#time_left()}
-call timer_start(100, {-> execute(':redraw')}, { 'repeat': -1 })
+call timer_start(900, {-> execute(':redraw')}, { 'repeat': -1 })
 ```
 
 #### Other commands:
