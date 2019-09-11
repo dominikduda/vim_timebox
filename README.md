@@ -3,6 +3,9 @@
 # vim_timebox
 Want try solving a problem in limited time? *vim_timebox* is simple vim-exit-surviving timer.
 
+<img src="https://raw.githubusercontent.com/dominikduda/vim_timebox/master/images/enabled.png" />
+<img src="https://raw.githubusercontent.com/dominikduda/vim_timebox/master/images/elapsed.png" />
+
 ##### Why should you use it?
   - Simple but sufficient timebox solution
   - Creates temp timestamp file which makes it independent of vim process
