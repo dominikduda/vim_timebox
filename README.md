@@ -9,7 +9,6 @@ Want try solving a problem in limited time? *vim_timebox* is simple vim-exit-sur
 ##### Why should you use it?
   - Simple but sufficient timebox solution
   - Uses temp file which makes it independent of vim process
-  - Works out of the box!
 
 ## Installation
 via `Plug`, `Neobundle` or `Vundle`:
@@ -24,6 +23,23 @@ git clone https://github.com/dominikduda/vim_timebox.git ~/.vim/bundle/vim_timeb
 ```
 
 ## How to use
+
+Add one of following to your `.vimrc` depending on your status line handling:
+
+#### With airline plugin:
+```vim
+let g:airline_section_x = "%{vim_timebox#time_left()}"
+call timer_start(900, {-> execute(':AirlineRefresh')}, { 'repeat': -1 })
+```
+
+#### With default status line:
+
+```vim
+set  statusline+=%{vim_timebox#time_left()}
+call timer_start(100, {-> execute(':redraw')}, { 'repeat': -1 })
+```
+
+#### Other commands:
 
 To strart new timebox with default duration use:
 ```
