@@ -1,10 +1,11 @@
 <img src="https://raw.githubusercontent.com/dominikduda/config_files/master/dd_logo_blue_bg.png" width="300" height="300" />
 
 # vim_timebox
-Want try solving a problem in limited time? *vim_timebox* is simple vim-exit surviving timer.
+Want try solving a problem in limited time? *vim_timebox* is simple vim-exit-surviving timer.
 
 ##### Why should you use it?
   - Simple but sufficient timebox solution
+  - Creates temp timestamp file which makes it independent of vim process
   - Works out of the box!
 
 ## Installation
@@ -39,7 +40,7 @@ To disable timebox:
 
 ## Customization (values written here are defaults)
 
-#### Change yank with context mapping:
+#### Change default duration:
 
 ```vim
 " Value in minutes
