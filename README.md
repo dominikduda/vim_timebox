@@ -41,12 +41,12 @@ call timer_start(900, {-> execute(':redraw')}, { 'repeat': -1 })
 
 #### Other commands:
 
-To strart new timebox with default duration use:
+To start a new timebox with default duration use:
 ```
 :TimeboxNew
 ```
 
-To strart new timebox with append it to command above (minutes):
+To start a new timebox with custom duration use (10 minutes):
 ```
 :TimeboxNew 10
 ```
