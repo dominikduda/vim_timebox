@@ -18,7 +18,7 @@ function! vim_timebox#time_left()
   let s:full_seconds_left = (s:seconds_left % 60)
   let s:full_minutes_left = s:seconds_left / 60
   let s:separator = (localtime() % 2) == 1 ? '⧗' : '⧖'
-  let s:counter = "Timebox " . s:full_minutes_left . " min " . s:full_seconds_left . " sec " . s:separator
+  let s:counter = "Timebox " . s:full_minutes_left . s:separator . s:full_seconds_left
   return(s:counter)
 endfunction
 
