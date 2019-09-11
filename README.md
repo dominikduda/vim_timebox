@@ -8,7 +8,7 @@ Want try solving a problem in limited time? *vim_timebox* is simple vim-exit-sur
 
 ##### Why should you use it?
   - Simple but sufficient timebox solution
-  - Creates temp timestamp file which makes it independent of vim process
+  - Uses temp file which makes it independent of vim process
   - Works out of the box!
 
 ## Installation
